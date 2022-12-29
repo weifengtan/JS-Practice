@@ -11,14 +11,14 @@ ppl.sort();
 
 console.log(ppl); 
 
-const fruits = ["apples", "bannanas", "pears", "mango"]
+ppl.push("bob");
 
-let text = "ul"; 
-fruits.forEach(thisFunction);
-text += "ul"; 
+console.log(ppl); 
 
-function thisFunction(value){
-    text += "<li>" + value + "</li>";
-}
+ppl[6] = "Martin"; 
 
-console.log(fruits); 
+console.log(ppl);
+
+console.log(Array.isArray(ppl));
+
+console.log(ppl.toString());
