@@ -42,3 +42,5 @@ div.appendChild(blackDivP);
 
 container.appendChild(div); 
 
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World"); 
