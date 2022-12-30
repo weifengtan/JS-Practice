@@ -42,5 +42,33 @@ div.appendChild(blackDivP);
 
 container.appendChild(div); 
 
-const btn = document.querySelector("#btn");
-btn.onclick = () => alert("Hello World"); 
+
+
+function alertFunction() {
+    alert("YAY"); 
+}
+
+btn.addEventListener('click', function(pass) {
+    pass.target.style.background = 'blue';
+    pass.target.style.color = 'red'; 
+    pass.target.style.border = '4px solid teal'; 
+    pass.target.setAttribute(
+        "style",
+        "border-radius: 10px"
+    );
+}); 
+
+const myFunction = () => console.log('cool'); 
+
+btn.addEventListener('click', myFunction); 
+
+const buttons = document.querySelectorAll("button"); 
+buttons.forEach((thing) => {
+    thing.addEventListener('keyup', (ok) => {
+        alert(thing.id); 
+        ok.target.setAttribute(
+            'style',
+            'border-radius: 10px'
+        );
+    });
+}); 
